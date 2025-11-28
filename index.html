@@ -3,45 +3,46 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Give & Receive — Donate Unused Items</title>
+  <title>Community Item Share</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Give & Receive</h1>
-    <nav aria-label="Main">
+    <h1>Community Item Share</h1>
+    <nav aria-label="Main Navigation">
       <a href="index.html">Home</a>
-      <a href="donate.html">Donate</a>
+      <a href="donate.html">Donate Items</a>
       <a href="request.html">Request Help</a>
       <a href="about.html">About</a>
     </nav>
   </header>
 
   <main>
-    <section id="hero">
-      <h2>Donate unused items to people in need</h2>
-      <p>Quickly match local donors with families and individuals who need everyday items.</p>
-      <p><a href="donate.html" class="btn">Donate an item</a>
-         <a href="request.html" class="btn">Request help</a></p>
+    <section class="hero">
+      <h2>Give what you don’t need. Receive what you do.</h2>
+      <p>A simple service connecting donors to people in need.</p>
+      <div class="buttons">
+        <a class="btn" href="donate.html">Donate an Item</a>
+        <a class="btn" href="request.html">Request an Item</a>
+      </div>
     </section>
 
-    <section id="how">
+    <section>
       <h3>How it works</h3>
       <ol>
-        <li>Donor lists available items (photos + short description).</li>
-        <li>Recipient requests items and arranges collection or pickup.</li>
-        <li>Volunteers help match & deliver when needed.</li>
+        <li>Donors submit items they no longer need.</li>
+        <li>Recipients browse and request items.</li>
+        <li>Volunteers help arrange collection and delivery.</li>
       </ol>
     </section>
   </main>
 
   <footer>
-    <p>Contact: <a href="mailto:info@example.org">info@example.org</a></p>
-    <p>&copy; <span id="year"></span> Give & Receive</p>
+    <p>&copy; <span id="year"></span> Community Item Share</p>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
