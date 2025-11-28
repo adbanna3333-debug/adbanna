@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Donate Items</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <h1>Donate Items</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="donate.html">Donate Items</a>
+    <a href="request.html">Request Help</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Donate an Item</h2>
+  <p>Fill out the form below to offer an item to someone in need.</p>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <label>Your Name
+      <input type="text" name="name" required>
+    </label>
+
+    <label>Your Email
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Item Description
+      <textarea name="item" required></textarea>
+    </label>
+
+    <label>Photo URL (optional)
+      <input type="url" name="photo">
+    </label>
+
+    <label>Pickup or Drop-off?
+      <select name="method">
+        <option>Pickup</option>
+        <option>Drop-off</option>
+      </select>
+    </label>
+
+    <button type="submit" class="btn">Submit Donation</button>
+  </form>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Community Item Share</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
