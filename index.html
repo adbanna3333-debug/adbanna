@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Give & Receive — Donate Unused Items</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Give & Receive</h1>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="donate.html">Donate</a>
+      <a href="request.html">Request Help</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Donate unused items to people in need</h2>
+      <p>Quickly match local donors with families and individuals who need everyday items.</p>
+      <p><a href="donate.html" class="btn">Donate an item</a>
+         <a href="request.html" class="btn">Request help</a></p>
+    </section>
+
+    <section id="how">
+      <h3>How it works</h3>
+      <ol>
+        <li>Donor lists available items (photos + short description).</li>
+        <li>Recipient requests items and arranges collection or pickup.</li>
+        <li>Volunteers help match & deliver when needed.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:info@example.org">info@example.org</a></p>
+    <p>&copy; <span id="year"></span> Give & Receive</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
